@@ -32,5 +32,13 @@ public class PencilTest {
 		
 		assertEquals(expected, paper.getWords());
 	}
+	
+	@Test
+	public void pencilConstructorSetsDurability() {
+		Pencil newPencil = new Pencil(100);
+		int expected = 100;
+		
+		assertEquals(expected, newPencil.durability);
+	}
 
 }
